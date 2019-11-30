@@ -79,7 +79,8 @@
 .mfp-loading.mfp-figure {
   display: none; }
 
-
+.mfp-hide {
+  display: none !important; }
 
 .mfp-preloader {
   color: #cccccc;
