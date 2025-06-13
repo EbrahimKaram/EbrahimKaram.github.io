@@ -419,215 +419,81 @@ ul#nav div.current a {
 }
 
 .cplusplus {
-    width: 80%;
+    width: 90%;
     -moz-animation: cplusplus 2s ease;
     -webkit-animation: cplusplus 2s ease;
 }
 
-@-moz-keyframes cplusplus {
+
+/* Define a single animation that animates from 0 to 100% width */
+@keyframes expand-width {
     0% {
         width: 0px;
     }
-
     100% {
-        width: 80%;
+        width: 100%; /* This will be overridden by the specific class's width */
     }
 }
 
-@-webkit-keyframes cplusplus {
+@keyframes expand-to-target-width {
     0% {
         width: 0px;
     }
-
     100% {
-        width: 80%;
+        width: var(--target-width); /* Use the custom property */
     }
 }
 
-.csharp {
-    width: 70%;
-    -moz-animation: csharp 2s ease;
-    -webkit-animation: csharp 2s ease;
-}
-
-@-moz-keyframes csharp {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-@-webkit-keyframes csharp {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-.python {
-    width: 65%;
-    -moz-animation: python 2s ease;
-    -webkit-animation: python 2s ease;
-}
-
-@-moz-keyframes python {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 65%;
-    }
-}
-
-@-webkit-keyframes python {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 65%;
-    }
+.fifty {
+    --target-width: 50%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
 
-.latex {
-    width: 80%;
-    -moz-animation: latex 2s ease;
-    -webkit-animation: latex 2s ease;
+.sixty {
+    --target-width: 60%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
-@-moz-keyframes latex {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 80%;
-    }
-}
-
-@-webkit-keyframes latex {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 80%;
-    }
-}
-
-.mathematica {
-    width: 75%;
-    -moz-animation: mathematica 2s ease;
-    -webkit-animation: mathematica 2s ease;
-}
-
-@-moz-keyframes mathematica {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-@-webkit-keyframes mathematica {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 75%;
-    }
+.sixtyfive {
+    --target-width: 65%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
 
-.sonyvegas {
-    width: 85%;
-    -moz-animation: sonyvegas 2s ease;
-    -webkit-animation: sonyvegas 2s ease;
+.seventy {
+    --target-width: 70%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
-@-moz-keyframes sonyvegas {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 85%;
-    }
+.seventyfive {
+    --target-width: 75%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
-@-webkit-keyframes sonyvegas {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 85%;
-    }
+.eighty {
+    --target-width: 80%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
-
-.html5 {
-    width: 50%;
-    -moz-animation: html5 2s ease;
-    -webkit-animation: html5 2s ease;
+.eightyfive {
+    --target-width: 85%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 }
 
-@-moz-keyframes html5 {
-    0% {
-        width: 0px;
-    }
+/* Add any other percentages you need */
+.ninety {
+    --target-width: 90%; /* Define the target width for this class */
+    width:var(--target-width);
+    animation: expand-to-target-width 2s ease forwards;
 
-    100% {
-        width: 50%;
-    }
-}
-
-@-webkit-keyframes html5 {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 50%;
-    }
-}
-
-
-.css {
-    width: 40%;
-    -moz-animation: css 2s ease;
-    -webkit-animation: css 2s ease;
-}
-
-@-moz-keyframes css {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
-@-webkit-keyframes css {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 40%;
-    }
 }
 
 
