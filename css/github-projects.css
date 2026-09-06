@@ -1,0 +1,155 @@
+/* Live GitHub projects page
+--------------------------------------------------------------------- */
+
+header.github-projects-header {
+    height: auto;
+    min-height: 0;
+    background: #161415;
+    overflow: visible;
+    text-align: left;
+}
+
+header.github-projects-header:before {
+    content: none;
+    display: none;
+}
+
+.github-projects-page {
+    padding: 96px 0 72px;
+}
+
+.github-projects-page h1 {
+    font: 15px/24px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 18px;
+    color: #95A3A3;
+}
+
+.github-projects-intro,
+.github-projects-count {
+    text-align: center;
+    color: #c6c7c7;
+    max-width: 720px;
+    margin: 0 auto 18px;
+    font: 16px/28px 'librebaskerville-regular', serif;
+}
+
+.github-projects-count {
+    color: #F06000;
+    font: 13px/20px 'opensans-semibold', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.gh-status {
+    text-align: center;
+    color: #c6c7c7;
+    margin: 0 auto 36px;
+    max-width: 640px;
+}
+
+.gh-status a {
+    color: #F06000;
+}
+
+.gh-error {
+    color: #ffb4a2;
+}
+
+.gh-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 12px;
+}
+
+.gh-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    padding: 24px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gh-card h3 {
+    font: 16px/24px 'opensans-bold', sans-serif;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px;
+}
+
+.gh-card p {
+    color: #c6c7c7;
+    font: 14px/22px 'opensans-light', sans-serif;
+    margin: 0 0 16px;
+    flex: 1;
+}
+
+.gh-meta {
+    margin-bottom: 16px;
+    min-height: 22px;
+}
+
+.gh-badge {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 4px 8px;
+    font: 11px/14px 'opensans-semibold', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #95A3A3;
+    border: 1px solid #3a3a3a;
+}
+
+.gh-badge-pages {
+    color: #F06000;
+    border-color: #F06000;
+}
+
+.gh-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gh-actions .button {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 12px;
+}
+
+.gh-actions .gh-live {
+    background: #F06000;
+    color: #fff;
+}
+
+.gh-actions .gh-live:hover {
+    background: #cc5200;
+    color: #fff;
+}
+
+.gh-actions .gh-repo {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #525252;
+}
+
+.gh-actions .gh-repo:hover {
+    border-color: #F06000;
+    color: #F06000;
+}
+
+@media only screen and (max-width: 767px) {
+    .github-projects-page {
+        padding-top: 72px;
+    }
+
+    .gh-grid {
+        grid-template-columns: 1fr;
+    }
+}
