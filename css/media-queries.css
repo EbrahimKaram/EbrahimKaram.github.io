@@ -187,9 +187,12 @@
 
    /* Header Styles
    -------------------------------------------------------------------- */
+   header {
+      padding-top: 64px;
+   }
    header .banner {
       padding-bottom: 12px;
-      padding-top: 6px;
+      padding-top: 12px;
    }
    header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
    header .banner-text h3 {

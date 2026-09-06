@@ -40,23 +40,26 @@ header {
     -webkit-background-size: cover !important;
     text-align: center;
     overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
 }
 
-/* vertically center banner section */
+/* keep space below the fixed nav instead of overlapping it */
 header:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+    content: none;
+    display: none;
 }
 
 header .banner {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
+    display: block;
     width: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
     padding-bottom: 30px;
-    s text-align: center;
+    text-align: center;
 }
 
 header .banner-text {

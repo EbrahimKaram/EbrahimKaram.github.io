@@ -4,6 +4,8 @@
 header.github-projects-header {
     height: auto;
     min-height: 0;
+    padding-top: 0;
+    display: block;
     background: #161415;
     overflow: visible;
     text-align: left;
